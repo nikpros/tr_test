@@ -1,37 +1,22 @@
-# my-test
-
-## Project setup
+# Инструкции перед запуском на виртуальной машине с ОС Ubuntu 18.04:
 ```
+$ sudo apt update
+$ sudo apt install nodejs
+$ sudo apt install npm
+```
+
+# Рекомендации по инструментам запуска
+
+Отладка и просмотр результов выполнения тестового задания осуществлялись через браузер Google Chrome v77.0.3865.90
+
+# Пошаговая инструкция запуска
+```
+cd tr_test-master
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Дополнительные сведения
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## Установка
-sudo apt nodejs install
-## Пояснение ко второму заданию и jsonplaceholder
-## Зарегистрированные пользователи
-
-asd - asd
-Ivan - 1234
+1. В задании №1 зарегистрировано ДВА пользователя с соответствующими парами "логин-пароль": asd-asd, Ivan-1234
+2. В задании №2 для отправления созданного объекта использовался демо-сервер https://my-json-server.typicode.com/typicode/demo/posts (т.к. добавление данных через POST-запрос на сервере происходит посредством PHP-скрипта, который я не стал реализовывать)
