@@ -27,3 +27,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Установка
+sudo apt nodejs install
+## Пояснение ко второму заданию и jsonplaceholder
+## Зарегистрированные пользователи
+
+asd - asd
+Ivan - 1234
