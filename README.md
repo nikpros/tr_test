@@ -1,22 +1,18 @@
-# Инструкции перед запуском на виртуальной машине с ОС Ubuntu 18.04:
+# Config for layouts single-page template
+
+## Before Usage:
+  + change folder name from "jade" to "pug"
+  + add new folder /src/images
+
+## Usage
+Execute there are commands for start webpack-dev-server:
 ```
-$ sudo apt update
-$ sudo apt install nodejs
-$ sudo apt install npm
+$ cd webpack-spa
+$ npm install
+$ npm run dev
 ```
-
-# Рекомендации по инструментам запуска
-
-Отладка и просмотр результов выполнения тестового задания осуществлялись через браузер Google Chrome v77.0.3865.90 и ОС Windows 10
-
-# Пошаговая инструкция запуска
-```
-cd tr_test-master
-npm install
-npm run serve
-```
-
-### Дополнительные сведения
-
-1. В задании №1 зарегистрировано ДВА пользователя с соответствующими парами "логин-пароль": asd-asd, Ivan-1234
-2. В задании №2 для отправления созданного объекта использовался демо-сервер https://my-json-server.typicode.com/typicode/demo/posts (т.к. добавление данных через POST-запрос на сервере происходит посредством PHP-скрипта, который я не стал реализовывать)
+## What's included
++ PUG
++ Stylus
++ Bootstrap
++ jQuery

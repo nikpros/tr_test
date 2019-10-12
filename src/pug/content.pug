@@ -1,0 +1,39 @@
+include ./utils/mixins.pug
+
+body
+    
+    #content
+        #taskOne
+            
+            .card
+                .card-body
+                    .card-text
+                        form
+                            .form-group.bmd-form-group
+                                label.bmd-label-floating(for='name') Логин
+                                input#name.form-control(type='text')
+                            .form-group.bmd-form-group
+                                label.bmd-label-floating(for='pass') Пароль
+                                input#pass.form-control(type='password')
+                            button.btn.btn-default Отмена
+                            button.btn.btn-primary.btn-raised#send(type='submit') Отправить
+        #taskTwo
+            .card
+                .card-body
+                    .card-title.d-flex.justify-content-center
+                        button.btn.btn-raised.btn-primary#create(type='button') Создать
+                    .card-text.card-items
+                        form.container-fluid
+                            - for (let i = 1; i <= 3; i++)
+                                +pairKeyValue(`prop${i}`, `value${i}`)
+                    .footer.row
+                        .col.d-flex.justify-content-center
+                            button.btn.btn-primary.bmd-btn-fab.btnRemove(type='button')
+                                i.material-icons remove
+                        .col.d-flex.justify-content-center
+                            button.btn.btn-primary.bmd-btn-fab.btnAdd(type='button')
+                                i.material-icons add
+
+
+
+
