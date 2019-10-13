@@ -116,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             allInputCheck.forEach(input => {
                 if (!input.value) console.warn('Поле свойства объекта не может быть пустым!!!')
                 else input.classList.add('input-checked')
-                // console.log(input.value)
             });
 
             allInputCheck.forEach(input => {
@@ -197,10 +196,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 .then(_items => {
                     let setTransform = Array.from(_items);
 
-                    console.table(setTransform)
-
-                    createTable(setTransform)
-                    // for (let [key, value] of _items.entries()) console.log(key);
+                    createTable(setTransform);
                 })
             
             function transformToSet(result) {
@@ -228,9 +224,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
 
             function filterNewSet(items) {
+                for (let [key, value] of items.entries()) console.log(key);
+
                 items.forEach(item => {
                     if (item['%'] <= 2 ) items.delete(item)
                 });
+                
                 return items
             }
 
