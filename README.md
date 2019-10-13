@@ -1,18 +1,20 @@
-# Config for layouts single-page template
+# Инструкции перед запуском на виртуальной машине с ОС Ubuntu 18.04 и рекомендации по инструментам запуска:
+  
+прежние (см. README.md в ветке master) 
 
-## Before Usage:
-  + change folder name from "jade" to "pug"
-  + add new folder /src/images
+# Пошаговая инструкция запуска
+```
+cd tr_test-native
+npm install
+npm run dev
+```
 
-## Usage
-Execute there are commands for start webpack-dev-server:
+### Дополнительные сведения (расширение для ветки master):
+
+1. В задании №3 для большей наглядности работы фильтра в bd.json (файл, имитирующий БД на сервере) добавлен 4ый объект
+
 ```
-$ cd webpack-spa
-$ npm install
-$ npm run dev
+{
+  "Трафик": 500
+}
 ```
-## What's included
-+ PUG
-+ Stylus
-+ Bootstrap
-+ jQuery
