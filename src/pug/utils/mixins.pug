@@ -2,7 +2,7 @@ mixin pairKeyValue(prop, value)
     .card-item.row
         .col-12.col-md-6.form-group.bmd-form-group
             label.bmd-label-floating(for=prop) Свойство
-            input.form-control(id != prop type='text')
+            input.form-control.input-check(id != prop type='text')
         .col-12.col-md-6.form-group.bmd-form-group
             label.bmd-label-floating(for=value) Значение
-            input.form-control(id != value type='text')
+            input.form-control.input-value(id != value type='text')

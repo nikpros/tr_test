@@ -7,6 +7,8 @@ body
             
             .card
                 .card-body
+                    .card-title
+                        h1.text-center Авторизация
                     .card-text
                         form
                             .form-group.bmd-form-group
@@ -20,6 +22,8 @@ body
         #taskTwo
             .card
                 .card-body
+                    .card-title
+                        h1.text-center Объект
                     .card-title.d-flex.justify-content-center
                         button.btn.btn-raised.btn-primary#create(type='button') Создать
                     .card-text.card-items
@@ -33,6 +37,23 @@ body
                         .col.d-flex.justify-content-center
                             button.btn.btn-primary.bmd-btn-fab.btnAdd(type='button')
                                 i.material-icons add
+        #taskThree
+            .card
+                .card-body
+                    .card-title
+                        h1.text-center Фильтр
+                    .card-title.d-flex.justify-content-center
+                        button.btn.btn-raised.btn-primary#fetch(type='button') Получить
+                    .card-text
+                        table.table.text-center
+                            thead
+                                tr
+                                    th(scope='col') ID
+                                    th(scope='col') Трафик
+                                    th(scope='col') % от общего трафика
+                            tbody
+
+
 
 
 
